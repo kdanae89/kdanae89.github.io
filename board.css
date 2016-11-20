@@ -1,0 +1,14 @@
+div {
+  display: inline-block;
+  border: 1px solid black;
+  height: 5em;
+  width: 13.6%;
+  margin: auto;
+}
+#board {
+  border: 1px solid black;
+  width: 70%;
+  height: 40em;
+  overflow: hidden;
+  padding: 2em 0 0 1em;
+}
