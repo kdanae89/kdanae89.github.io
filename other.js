@@ -32,14 +32,13 @@ for (var i=0; i < 42; i++) {
 //this is an event handler
  var toggleFunction = function() {
    // toggle will alternate between true and false - x and o
-   if (redBlack === true) {
-     console.log('red turn');
-   } else {
-     console.log('black turn');
-   }
+  //  if (redBlack === true) {
+  //    arr1[a].css('background', 'red');
+  //  } else {
+  //    arr1[a].css('background', 'black');
+  //  }
 
    redBlack = !redBlack;
-  //  this.removeEventListener('click', toggleFunction);
   //  win();
  }
 
@@ -48,21 +47,47 @@ for (var i=0; i < 42; i++) {
 var fillSquare1 = function() {
   var arr1 = [$('#35'), $('#28'), $('#21'), $('#14'), $('#7'), $('#0')];
   for (a=0; a < arr1.length; a++) {
-    if ([a] == $('.red')) {
-      console.log('red');
-    } else if ([a] == $('black')) {
-      console.log('black');
+    if (arr1[a].hasClass('red')) {
+      continue;
+    } else if (arr1[a].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr1[a].css('background', 'red');
+        arr1[a].addClass('red');
+        break;
+      } else {
+        arr1[a].css('background', 'black');
+        arr1[a].addClass('black');
+        break;
+      }
     }
   }
 }
+    // if (arr1[a].hasClass() == $('.red')) {
+    //   console.log('');
+    // } else if (arr1[a].hasClass() == $('.black')) {
+    //   console.log('');
+    // } else {
+    //   toggleFunction();
+    //   if (redBlack === true) {
+    //     arr1[a].css('background', 'red');
+    //     arr1[a].addClass('red');
+    //   } else {
+    //     arr1[a].css('background', 'black');
+    //     arr1[a].addClass('black');
+    //     break;
+//       }
+//     }
+//   }
+// }
 var fillSquare2 = function() {
   var arr2 = [$('#36'), $('#29'), $('#22'), $('#15'), $('#8'), $('#1')];
   for (d=0; d < arr2.length; d++) {
     if ([d] == $('.red')) {
       console.log('red');
-    } else if ([d] == $('black')) {
+    } else if ([d] == $('.black')) {
       console.log('black');
     } else {
       console.log('empty');
@@ -74,7 +99,7 @@ var fillSquare3 = function() {
   for (e=0; e < arr3.length; e++) {
     if ([e] == $('.red')) {
       console.log('red');
-    } else if ([e] == $('black')) {
+    } else if ([e] == $('.black')) {
       console.log('black');
     } else {
       console.log('empty');
@@ -86,7 +111,7 @@ var fillSquare4 = function() {
   for (f=0; f < arr4.length; f++) {
     if ([f] == $('.red')) {
       console.log('red');
-    } else if ([f] == $('black')) {
+    } else if ([f] == $('.black')) {
       console.log('black');
     } else {
       console.log('empty');
@@ -98,7 +123,7 @@ var fillSquare5 = function() {
   for (g=0; g < arr5.length; g++) {
     if ([g] == $('.red')) {
       console.log('red');
-    } else if ([g] == $('black')) {
+    } else if ([g] == $('.black')) {
       console.log('black');
     } else {
       console.log('empty');
@@ -110,7 +135,7 @@ var fillSquare6 = function() {
   for (h=0; h < arr6.length; h++) {
     if ([h] == $('.red')) {
       console.log('red');
-    } else if ([h] == $('black')) {
+    } else if ([h] == $('.black')) {
       console.log('black');
     } else {
       console.log('empty');
@@ -122,7 +147,7 @@ var fillSquare7 = function() {
   for (j=0; j < arr7.length; h++) {
     if ([j] == $('.red')) {
       console.log('red');
-    } else if ([h] == $('black')) {
+    } else if ([h] == $('.black')) {
       console.log('black');
     } else {
       console.log('empty');
