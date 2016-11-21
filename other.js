@@ -65,92 +65,129 @@ var fillSquare1 = function() {
     }
   }
 }
-    // if (arr1[a].hasClass() == $('.red')) {
-    //   console.log('');
-    // } else if (arr1[a].hasClass() == $('.black')) {
-    //   console.log('');
-    // } else {
-    //   toggleFunction();
-    //   if (redBlack === true) {
-    //     arr1[a].css('background', 'red');
-    //     arr1[a].addClass('red');
-    //   } else {
-    //     arr1[a].css('background', 'black');
-    //     arr1[a].addClass('black');
-    //     break;
-//       }
-//     }
-//   }
-// }
 var fillSquare2 = function() {
   var arr2 = [$('#36'), $('#29'), $('#22'), $('#15'), $('#8'), $('#1')];
   for (d=0; d < arr2.length; d++) {
-    if ([d] == $('.red')) {
-      console.log('red');
-    } else if ([d] == $('.black')) {
-      console.log('black');
+    if (arr2[d].hasClass('red')) {
+      continue;
+    } else if (arr2[d].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr2[d].css('background', 'red');
+        arr2[d].addClass('red');
+        break;
+      } else {
+        arr2[d].css('background', 'black');
+        arr2[d].addClass('black');
+        break;
+      }
     }
   }
 }
 var fillSquare3 = function() {
   var arr3 = [$('#37'), $('#30'), $('#23'), $('#16'), $('#9'), $('#2')];
   for (e=0; e < arr3.length; e++) {
-    if ([e] == $('.red')) {
-      console.log('red');
-    } else if ([e] == $('.black')) {
-      console.log('black');
+    if (arr3[e].hasClass('red')) {
+      continue;
+    } else if (arr3[e].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr3[e].css('background', 'red');
+        arr3[e].addClass('red');
+        break;
+      } else {
+        arr3[e].css('background', 'black');
+        arr3[e].addClass('black');
+        break;
+      }
     }
   }
 }
 var fillSquare4 = function() {
   var arr4 = [$('#38'), $('#31'), $('#24'), $('#17'), $('#10'), $('#3')];
   for (f=0; f < arr4.length; f++) {
-    if ([f] == $('.red')) {
-      console.log('red');
-    } else if ([f] == $('.black')) {
-      console.log('black');
+    if (arr4[f].hasClass('red')) {
+      continue;
+    } else if (arr4[f].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr4[f].css('background', 'red');
+        arr4[f].addClass('red');
+        break;
+      } else {
+        arr4[f].css('background', 'black');
+        arr4[f].addClass('black');
+        break;
+      }
     }
   }
 }
 var fillSquare5 = function() {
   var arr5 = [$('#39'), $('#32'), $('#25'), $('#18'), $('#11'), $('#4')];
   for (g=0; g < arr5.length; g++) {
-    if ([g] == $('.red')) {
-      console.log('red');
-    } else if ([g] == $('.black')) {
-      console.log('black');
+    if (arr5[g].hasClass('red')) {
+      continue;
+    } else if (arr5[g].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr5[g].css('background', 'red');
+        arr5[g].addClass('red');
+        break;
+      } else {
+        arr5[g].css('background', 'black');
+        arr5[g].addClass('black');
+        break;
+      }
     }
   }
 }
 var fillSquare6 = function() {
-  var arr6 = [$('#40'), $('#33'), $('#26'), $('#19'), $('#12'), $('#4')];
+  var arr6 = [$('#40'), $('#33'), $('#26'), $('#19'), $('#12'), $('#5')];
   for (h=0; h < arr6.length; h++) {
-    if ([h] == $('.red')) {
-      console.log('red');
-    } else if ([h] == $('.black')) {
-      console.log('black');
+    if (arr6[h].hasClass('red')) {
+      continue;
+    } else if (arr6[h].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr6[h].css('background', 'red');
+        arr6[h].addClass('red');
+        break;
+      } else {
+        arr6[h].css('background', 'black');
+        arr6[h].addClass('black');
+        break;
+      }
     }
   }
 }
 var fillSquare7 = function() {
-  var arr7 = [$('#41'), $('#34'), $('#27'), $('#20'), $('#13'), $('#5')];
-  for (j=0; j < arr7.length; h++) {
-    if ([j] == $('.red')) {
-      console.log('red');
-    } else if ([h] == $('.black')) {
-      console.log('black');
+  var arr7 = [$('#41'), $('#34'), $('#27'), $('#20'), $('#13'), $('#6')];
+  for (j=0; j < arr7.length; j++) {
+    if (arr7[j].hasClass('red')) {
+      continue;
+    } else if (arr7[j].hasClass('black')) {
+      continue;
     } else {
-      console.log('empty');
+      toggleFunction();
+      if (redBlack === true) {
+        arr7[j].css('background', 'red');
+        arr7[j].addClass('red');
+        break;
+      } else {
+        arr7[j].css('background', 'black');
+        arr7[j].addClass('black');
+        break;
+      }
     }
   }
 }
