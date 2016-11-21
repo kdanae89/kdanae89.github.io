@@ -4,7 +4,8 @@ $(function() {
 var gameBoard = $('#board');
 var buttons = $('.button');
 var squares = $('.square');
-var redBlack = true;
+var whosTurn = $('h3');
+var blueBlack = true;
 
 
 //make buttons
@@ -13,6 +14,7 @@ for(var b=0; b < 7; b++) {
   gameBoard.append(divsB);
   divsB.attr('id', 'btn' + [b]);
   divsB.addClass('button');
+  divsB.text('Go Here');
 }
 
 
@@ -25,20 +27,24 @@ for (var i=0; i < 42; i++) {
   //gives each div a unique id for the array
   divs.attr('id', [i]);
   divs.addClass('square');
+  whosTurn.text('Black Player');
 }
 
 //function to toggle the color the square is assigned along with it's class... toggle player basically.
 
 //this is an event handler
- var toggleFunction = function() {
-   // toggle will alternate between true and false - x and o
+ var playerTurn = function() {
+   if (blueBlack === true){
+   whosTurn.text('Blue Player')
+ } else {
+   whosTurn.text('Black Player')
+ }
   //  if (redBlack === true) {
   //    arr1[a].css('background', 'red');
   //  } else {
   //    arr1[a].css('background', 'black');
   //  }
-
-   redBlack = !redBlack;
+   blueBlack = !blueBlack;
   //  win();
  }
 
@@ -47,15 +53,15 @@ for (var i=0; i < 42; i++) {
 var fillSquare1 = function() {
   var arr1 = [$('#35'), $('#28'), $('#21'), $('#14'), $('#7'), $('#0')];
   for (a=0; a < arr1.length; a++) {
-    if (arr1[a].hasClass('red')) {
+    if (arr1[a].hasClass('aqua')) {
       continue;
     } else if (arr1[a].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr1[a].css('background', 'red');
-        arr1[a].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr1[a].css('background', 'aqua');
+        arr1[a].addClass('aqua');
         break;
       } else {
         arr1[a].css('background', 'black');
@@ -68,15 +74,15 @@ var fillSquare1 = function() {
 var fillSquare2 = function() {
   var arr2 = [$('#36'), $('#29'), $('#22'), $('#15'), $('#8'), $('#1')];
   for (d=0; d < arr2.length; d++) {
-    if (arr2[d].hasClass('red')) {
+    if (arr2[d].hasClass('aqua')) {
       continue;
     } else if (arr2[d].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr2[d].css('background', 'red');
-        arr2[d].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr2[d].css('background', 'aqua');
+        arr2[d].addClass('aqua');
         break;
       } else {
         arr2[d].css('background', 'black');
@@ -89,15 +95,15 @@ var fillSquare2 = function() {
 var fillSquare3 = function() {
   var arr3 = [$('#37'), $('#30'), $('#23'), $('#16'), $('#9'), $('#2')];
   for (e=0; e < arr3.length; e++) {
-    if (arr3[e].hasClass('red')) {
+    if (arr3[e].hasClass('aqua')) {
       continue;
     } else if (arr3[e].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr3[e].css('background', 'red');
-        arr3[e].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr3[e].css('background', 'aqua');
+        arr3[e].addClass('aqua');
         break;
       } else {
         arr3[e].css('background', 'black');
@@ -110,15 +116,15 @@ var fillSquare3 = function() {
 var fillSquare4 = function() {
   var arr4 = [$('#38'), $('#31'), $('#24'), $('#17'), $('#10'), $('#3')];
   for (f=0; f < arr4.length; f++) {
-    if (arr4[f].hasClass('red')) {
+    if (arr4[f].hasClass('aqua')) {
       continue;
     } else if (arr4[f].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr4[f].css('background', 'red');
-        arr4[f].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr4[f].css('background', 'aqua');
+        arr4[f].addClass('aqua');
         break;
       } else {
         arr4[f].css('background', 'black');
@@ -131,15 +137,15 @@ var fillSquare4 = function() {
 var fillSquare5 = function() {
   var arr5 = [$('#39'), $('#32'), $('#25'), $('#18'), $('#11'), $('#4')];
   for (g=0; g < arr5.length; g++) {
-    if (arr5[g].hasClass('red')) {
+    if (arr5[g].hasClass('aqua')) {
       continue;
     } else if (arr5[g].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr5[g].css('background', 'red');
-        arr5[g].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr5[g].css('background', 'aqua');
+        arr5[g].addClass('aqua');
         break;
       } else {
         arr5[g].css('background', 'black');
@@ -152,15 +158,15 @@ var fillSquare5 = function() {
 var fillSquare6 = function() {
   var arr6 = [$('#40'), $('#33'), $('#26'), $('#19'), $('#12'), $('#5')];
   for (h=0; h < arr6.length; h++) {
-    if (arr6[h].hasClass('red')) {
+    if (arr6[h].hasClass('aqua')) {
       continue;
     } else if (arr6[h].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr6[h].css('background', 'red');
-        arr6[h].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr6[h].css('background', 'aqua');
+        arr6[h].addClass('aqua');
         break;
       } else {
         arr6[h].css('background', 'black');
@@ -173,15 +179,15 @@ var fillSquare6 = function() {
 var fillSquare7 = function() {
   var arr7 = [$('#41'), $('#34'), $('#27'), $('#20'), $('#13'), $('#6')];
   for (j=0; j < arr7.length; j++) {
-    if (arr7[j].hasClass('red')) {
+    if (arr7[j].hasClass('aqua')) {
       continue;
     } else if (arr7[j].hasClass('black')) {
       continue;
     } else {
-      toggleFunction();
-      if (redBlack === true) {
-        arr7[j].css('background', 'red');
-        arr7[j].addClass('red');
+      playerTurn();
+      if (blueBlack === true) {
+        arr7[j].css('background', 'aqua');
+        arr7[j].addClass('aqua');
         break;
       } else {
         arr7[j].css('background', 'black');

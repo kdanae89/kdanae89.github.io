@@ -1,22 +1,39 @@
 .square {
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid ivory;
   height: 5em;
   width: 13.6%;
   margin: auto;
 }
 .button {
   display: inline-block;
-  border: 1px solid black;
-  height: 3em;
+  border: 1px solid ivory;
+  height: 2em;
   width: 13.6%;
-  margin-bottom: 4em;
-  border-radius: 50%
+  margin-bottom: 3em;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1.5em 0 0 0;
+}
+.button:hover {
+  color: lavender;
+}
+.black {
+  border-radius: 50%;
+}
+.aqua {
+  border-radius: 50%;
 }
 #board {
   border: 1px solid black;
+  margin: auto;
   width: 70%;
-  height: 40em;
+  height: 44em;
   overflow: hidden;
-  padding: 6em 0 0 1em;
+  padding: 2em 0 0 2em;
+  background: #666666;
+}
+h3 {
+  text-align: center;
+  color: lavender;
 }
