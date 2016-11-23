@@ -4,19 +4,21 @@
   height: 5em;
   width: 13.6%;
   margin: auto;
+  border-radius: 15%;
 }
 .button {
   display: inline-block;
-  border: 1px solid ivory;
-  height: 2em;
+  /*border: 1px solid ivory;*/
+  height: 1em;
   width: 13.6%;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   border-radius: 50%;
   text-align: center;
   padding: 1.5em 0 0 0;
 }
 .button:hover {
   color: lavender;
+  font-style: oblique;
 }
 .black {
   border-radius: 50%;
@@ -36,6 +38,8 @@
 h3 {
   text-align: center;
   color: lavender;
+  font-size: 3em;
+  margin-bottom: 0.01em;
 }
 h1 {
   text-align: center;

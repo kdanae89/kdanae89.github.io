@@ -9,7 +9,7 @@ var blue = [];
 var black = [];
 var turn = 0;
 var blueBlack = true;
-var matches = 0;
+
 
 
 //make buttons
@@ -49,14 +49,19 @@ var winCombos = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4 ,5], [3, 4, 5, 6],
 //function iterates over array winCombos
 var whoWon = function(playerColor) {
   for (x=0; x < winCombos.length; x++) {
-    matches = 0;
+    //declare that there are no matches, setting matches as a variable to calculate winner
+    var matches = 0;
+    //iterate over the inner arrays
     for (y=0; y < winCombos[x].length; y++) {
+      //iterate over the players color array
       for (z=0; z < playerColor.length; z++) {
+        //checks player color positions against giant array
         if (winCombos[x][y] == playerColor[z]) {
           matches ++;
         }
       }
     }
+    //declares the winning condition
     if (matches == 4) {
       return true;
     }
@@ -65,15 +70,21 @@ var whoWon = function(playerColor) {
 }
 
 
-var checkWin = function() {
+var checkWinner = function() {
+  //if blue's got 4 matches
   if (whoWon(blue) == true) {
     gameBoard.html('<h1>BLUE WINS</h1>');
+    //if black has 4 matches
   } else if (whoWon(black) == true) {
     gameBoard.html('<h1>BLACK WINS</h1>');
+    //when all squares are filled with no win
   } else if (turn == 42) {
     gameBoard.html('<h1>DRAW</h1>');
   }
+  // var reset = $('button');
+  // reset.on('click', resetGame);
 }
+//I looked back over the lesson on nested loops and used Thom's from the tic-tac-toe as a reference to create my nested loop for this game, it looks really similar because it's basically the same idea as the tic-tac-toe board just much bigger with more combos.
 
 
 
@@ -83,14 +94,13 @@ var checkWin = function() {
    turn++;
    blue.sort();
    black.sort();
-  //  checkWin();
    if (blueBlack === true){
    whosTurn.text('Blue Player')
  } else {
    whosTurn.text('Black Player')
  }
    blueBlack = !blueBlack;
-   checkWin();
+  //  checkWinner();
  }
 
 
@@ -108,11 +118,13 @@ var fillSquare1 = function() {
         arr1[a].css('background', 'aqua');
         arr1[a].addClass('aqua');
         blue.push(arr1[a].attr('id'));
+        checkWinner();
         break;
       } else {
         arr1[a].css('background', 'black');
         arr1[a].addClass('black');
         black.push(arr1[a].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -131,11 +143,13 @@ var fillSquare2 = function() {
         arr2[d].css('background', 'aqua');
         arr2[d].addClass('aqua');
         blue.push(arr2[d].attr('id'));
+        checkWinner();
         break;
       } else {
         arr2[d].css('background', 'black');
         arr2[d].addClass('black');
         black.push(arr2[d].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -154,11 +168,13 @@ var fillSquare3 = function() {
         arr3[e].css('background', 'aqua');
         arr3[e].addClass('aqua');
         blue.push(arr3[e].attr('id'));
+        checkWinner();
         break;
       } else {
         arr3[e].css('background', 'black');
         arr3[e].addClass('black');
         black.push(arr3[e].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -177,11 +193,13 @@ var fillSquare4 = function() {
         arr4[f].css('background', 'aqua');
         arr4[f].addClass('aqua');
         blue.push(arr4[f].attr('id'));
+        checkWinner();
         break;
       } else {
         arr4[f].css('background', 'black');
         arr4[f].addClass('black');
         black.push(arr4[f].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -200,11 +218,13 @@ var fillSquare5 = function() {
         arr5[g].css('background', 'aqua');
         arr5[g].addClass('aqua');
         blue.push(arr5[g].attr('id'));
+        checkWinner();
         break;
       } else {
         arr5[g].css('background', 'black');
         arr5[g].addClass('black');
         black.push(arr5[g].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -223,11 +243,13 @@ var fillSquare6 = function() {
         arr6[h].css('background', 'aqua');
         arr6[h].addClass('aqua');
         blue.push(arr6[h].attr('id'));
+        checkWinner();
         break;
       } else {
         arr6[h].css('background', 'black');
         arr6[h].addClass('black');
         black.push(arr6[h].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -246,11 +268,13 @@ var fillSquare7 = function() {
         arr7[j].css('background', 'aqua');
         arr7[j].addClass('aqua');
         blue.push(arr7[j].attr('id'));
+        checkWinner();
         break;
       } else {
         arr7[j].css('background', 'black');
         arr7[j].addClass('black');
         black.push(arr7[j].attr('id'));
+        checkWinner();
         break;
       }
     }
@@ -265,12 +289,6 @@ $('#btn3').on('click', fillSquare4);
 $('#btn4').on('click', fillSquare5);
 $('#btn5').on('click', fillSquare6);
 $('#btn6').on('click', fillSquare7);
-
-
-
-
-
-
 
 
 
