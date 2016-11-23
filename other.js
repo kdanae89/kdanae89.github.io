@@ -65,15 +65,15 @@ var whoWon = function(playerColor) {
 }
 
 
-// var checkWin = function() {
-//   if (whoWon(bluePlayer) == true) {
-//     console.log('blue');
-//   } else if (whoWon(blackPlayer) == true) {
-//     console.log('black');
-//   } else if (turn == 42) {
-//     console.log('tie');
-//   }
-// }
+var checkWin = function() {
+  if (whoWon(blue) == true) {
+    gameBoard.html('<h1>BLUE WINS</h1>');
+  } else if (whoWon(black) == true) {
+    gameBoard.html('<h1>BLACK WINS</h1>');
+  } else if (turn == 42) {
+    gameBoard.html('<h1>DRAW</h1>');
+  }
+}
 
 
 
@@ -81,19 +81,16 @@ var whoWon = function(playerColor) {
 
  var playerTurn = function() {
    turn++;
-   console.log(blue);
+   blue.sort();
+   black.sort();
+  //  checkWin();
    if (blueBlack === true){
    whosTurn.text('Blue Player')
  } else {
    whosTurn.text('Black Player')
  }
-  //  if (redBlack === true) {
-  //    arr1[a].css('background', 'red');
-  //  } else {
-  //    arr1[a].css('background', 'black');
-  //  }
    blueBlack = !blueBlack;
-  //  win();
+   checkWin();
  }
 
 
@@ -110,12 +107,12 @@ var fillSquare1 = function() {
       if (blueBlack === true) {
         arr1[a].css('background', 'aqua');
         arr1[a].addClass('aqua');
-        blue.push($('arr1')[a].id);
+        blue.push(arr1[a].attr('id'));
         break;
       } else {
         arr1[a].css('background', 'black');
         arr1[a].addClass('black');
-        black.push(arr1[a]);
+        black.push(arr1[a].attr('id'));
         break;
       }
     }
@@ -133,12 +130,12 @@ var fillSquare2 = function() {
       if (blueBlack === true) {
         arr2[d].css('background', 'aqua');
         arr2[d].addClass('aqua');
-        blue.push(arr2[d]);
+        blue.push(arr2[d].attr('id'));
         break;
       } else {
         arr2[d].css('background', 'black');
         arr2[d].addClass('black');
-        black.push(arr2[d]);
+        black.push(arr2[d].attr('id'));
         break;
       }
     }
@@ -156,12 +153,12 @@ var fillSquare3 = function() {
       if (blueBlack === true) {
         arr3[e].css('background', 'aqua');
         arr3[e].addClass('aqua');
-        blue.push(arr3[e]);
+        blue.push(arr3[e].attr('id'));
         break;
       } else {
         arr3[e].css('background', 'black');
         arr3[e].addClass('black');
-        black.push(arr3[e]);
+        black.push(arr3[e].attr('id'));
         break;
       }
     }
@@ -179,12 +176,12 @@ var fillSquare4 = function() {
       if (blueBlack === true) {
         arr4[f].css('background', 'aqua');
         arr4[f].addClass('aqua');
-        blue.push(arr4[f]);
+        blue.push(arr4[f].attr('id'));
         break;
       } else {
         arr4[f].css('background', 'black');
         arr4[f].addClass('black');
-        black.push(arr4[f]);
+        black.push(arr4[f].attr('id'));
         break;
       }
     }
@@ -202,12 +199,12 @@ var fillSquare5 = function() {
       if (blueBlack === true) {
         arr5[g].css('background', 'aqua');
         arr5[g].addClass('aqua');
-        blue.push(arr5[g]);
+        blue.push(arr5[g].attr('id'));
         break;
       } else {
         arr5[g].css('background', 'black');
         arr5[g].addClass('black');
-        black.push(arr5[g]);
+        black.push(arr5[g].attr('id'));
         break;
       }
     }
@@ -225,12 +222,12 @@ var fillSquare6 = function() {
       if (blueBlack === true) {
         arr6[h].css('background', 'aqua');
         arr6[h].addClass('aqua');
-        blue.push(arr6[h]);
+        blue.push(arr6[h].attr('id'));
         break;
       } else {
         arr6[h].css('background', 'black');
         arr6[h].addClass('black');
-        black.push(arr6[h]);
+        black.push(arr6[h].attr('id'));
         break;
       }
     }
@@ -248,12 +245,12 @@ var fillSquare7 = function() {
       if (blueBlack === true) {
         arr7[j].css('background', 'aqua');
         arr7[j].addClass('aqua');
-        blue.push(arr7[j]);
+        blue.push(arr7[j].attr('id'));
         break;
       } else {
         arr7[j].css('background', 'black');
         arr7[j].addClass('black');
-        black.push(arr7[j]);
+        black.push(arr7[j].attr('id'));
         break;
       }
     }
