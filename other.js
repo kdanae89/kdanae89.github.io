@@ -5,7 +5,11 @@ var gameBoard = $('#board');
 var buttons = $('.button');
 var squares = $('.square');
 var whosTurn = $('h3');
+var blue = [];
+var black = [];
+var turn = 0;
 var blueBlack = true;
+var matches = 0;
 
 
 //make buttons
@@ -31,7 +35,7 @@ for (var i=0; i < 42; i++) {
 }
 
 //giant array with all of my winning CONDITIONS
-var = soYouThinkYouWon = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4 ,5], [3, 4, 5, 6],
+var winCombos = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4 ,5], [3, 4, 5, 6],
 [7, 8, 9, 10], [8, 9, 10, 11], [9, 10, 11, 12], [10, 11, 12, 13], [14, 15, 16, 17],
 [15, 16, 17, 18], [16, 17, 18, 19], [17, 18, 19, 20], [21, 22, 23, 24], [22, 23, 24, 25],
 [23, 24, 25, 26], [24, 25, 26, 27], [28, 29, 30, 31], [29, 30, 31, 32], [30, 31, 32, 33],
@@ -42,12 +46,42 @@ var = soYouThinkYouWon = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4 ,5], [3, 4, 5, 6]
 [5, 12, 19, 26], [12, 19, 26, 33], [19, 26, 33, 40], [6, 13, 20, 27], [13, 20, 27, 34],
 [20, 27, 34, 41]];
 
+//function iterates over array winCombos
+var whoWon = function(playerColor) {
+  for (x=0; x < winCombos.length; x++) {
+    matches = 0;
+    for (y=0; y < winCombos[x].length; y++) {
+      for (z=0; z < playerColor.length; z++) {
+        if (winCombos[x][y] == playerColor[z]) {
+          matches ++;
+        }
+      }
+    }
+    if (matches == 4) {
+      return true;
+    }
+  }
+  return false
+}
+
+
+// var checkWin = function() {
+//   if (whoWon(bluePlayer) == true) {
+//     console.log('blue');
+//   } else if (whoWon(blackPlayer) == true) {
+//     console.log('black');
+//   } else if (turn == 42) {
+//     console.log('tie');
+//   }
+// }
 
 
 
 //function to toggle the color the square is assigned along with it's class... toggle player basically.
 
  var playerTurn = function() {
+   turn++;
+   console.log(blue);
    if (blueBlack === true){
    whosTurn.text('Blue Player')
  } else {
@@ -76,10 +110,12 @@ var fillSquare1 = function() {
       if (blueBlack === true) {
         arr1[a].css('background', 'aqua');
         arr1[a].addClass('aqua');
+        blue.push($('arr1')[a].id);
         break;
       } else {
         arr1[a].css('background', 'black');
         arr1[a].addClass('black');
+        black.push(arr1[a]);
         break;
       }
     }
@@ -97,10 +133,12 @@ var fillSquare2 = function() {
       if (blueBlack === true) {
         arr2[d].css('background', 'aqua');
         arr2[d].addClass('aqua');
+        blue.push(arr2[d]);
         break;
       } else {
         arr2[d].css('background', 'black');
         arr2[d].addClass('black');
+        black.push(arr2[d]);
         break;
       }
     }
@@ -118,10 +156,12 @@ var fillSquare3 = function() {
       if (blueBlack === true) {
         arr3[e].css('background', 'aqua');
         arr3[e].addClass('aqua');
+        blue.push(arr3[e]);
         break;
       } else {
         arr3[e].css('background', 'black');
         arr3[e].addClass('black');
+        black.push(arr3[e]);
         break;
       }
     }
@@ -139,10 +179,12 @@ var fillSquare4 = function() {
       if (blueBlack === true) {
         arr4[f].css('background', 'aqua');
         arr4[f].addClass('aqua');
+        blue.push(arr4[f]);
         break;
       } else {
         arr4[f].css('background', 'black');
         arr4[f].addClass('black');
+        black.push(arr4[f]);
         break;
       }
     }
@@ -160,10 +202,12 @@ var fillSquare5 = function() {
       if (blueBlack === true) {
         arr5[g].css('background', 'aqua');
         arr5[g].addClass('aqua');
+        blue.push(arr5[g]);
         break;
       } else {
         arr5[g].css('background', 'black');
         arr5[g].addClass('black');
+        black.push(arr5[g]);
         break;
       }
     }
@@ -181,10 +225,12 @@ var fillSquare6 = function() {
       if (blueBlack === true) {
         arr6[h].css('background', 'aqua');
         arr6[h].addClass('aqua');
+        blue.push(arr6[h]);
         break;
       } else {
         arr6[h].css('background', 'black');
         arr6[h].addClass('black');
+        black.push(arr6[h]);
         break;
       }
     }
@@ -202,10 +248,12 @@ var fillSquare7 = function() {
       if (blueBlack === true) {
         arr7[j].css('background', 'aqua');
         arr7[j].addClass('aqua');
+        blue.push(arr7[j]);
         break;
       } else {
         arr7[j].css('background', 'black');
         arr7[j].addClass('black');
+        black.push(arr7[j]);
         break;
       }
     }
