@@ -46,3 +46,12 @@ h1 {
   color: lavender;
   font-size: 10em;
 }
+button {
+  margin-left: 30em;
+  height: 4em;
+  width: 10%;
+  border-radius: 15%;
+}
+button:hover {
+  background: aqua;
+}

@@ -86,7 +86,6 @@
 //
 //
 //
-//
 //build board
 // for (var i=0; i < 49; i++) {
 //   //makes 48 divs

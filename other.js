@@ -11,7 +11,7 @@ var turn = 0;
 var blueBlack = true;
 
 
-
+// var makeButtons = function() {
 //make buttons
 for(var b=0; b < 7; b++) {
   var divsB = $('<div>');
@@ -19,10 +19,11 @@ for(var b=0; b < 7; b++) {
   divsB.attr('id', 'btn' + [b]);
   divsB.addClass('button');
   divsB.text('Go Here');
-}
+  }
+// }
+// makeButtons();
 
-
-
+// var startGame = function() {
 //makeboard
 for (var i=0; i < 42; i++) {
   //makes 42 divs
@@ -32,8 +33,9 @@ for (var i=0; i < 42; i++) {
   divs.attr('id', [i]);
   divs.addClass('square');
   whosTurn.text('Black Player');
-}
-
+  }
+// }
+// startGame();
 //giant array with all of my winning CONDITIONS
 var winCombos = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4 ,5], [3, 4, 5, 6],
 [7, 8, 9, 10], [8, 9, 10, 11], [9, 10, 11, 12], [10, 11, 12, 13], [14, 15, 16, 17],
@@ -69,17 +71,26 @@ var whoWon = function(playerColor) {
   return false
 }
 
+var resetBoard = function() {
+
+}
+
 
 var checkWinner = function() {
+  var reset = $('<button>RESET</button>');
+  reset.on('click', resetBoard);
   //if blue's got 4 matches
   if (whoWon(blue) == true) {
     gameBoard.html('<h1>BLUE WINS</h1>');
+    gameBoard.append(reset);
     //if black has 4 matches
   } else if (whoWon(black) == true) {
     gameBoard.html('<h1>BLACK WINS</h1>');
+    gameBoard.append(reset);
     //when all squares are filled with no win
   } else if (turn == 42) {
     gameBoard.html('<h1>DRAW</h1>');
+    gameBoard.append(reset);
   }
   // var reset = $('button');
   // reset.on('click', resetGame);
@@ -100,24 +111,29 @@ var checkWinner = function() {
    whosTurn.text('Black Player')
  }
    blueBlack = !blueBlack;
-  //  checkWinner();
  }
 
 
 //functions to handle my clicks and fill my squares
 var fillSquare1 = function() {
+  //array that my buttons control, the column below them
   var arr1 = [$('#35'), $('#28'), $('#21'), $('#14'), $('#7'), $('#0')];
+  //loop for filling squares from bottom to top
   for (a=0; a < arr1.length; a++) {
+    //check for class
     if (arr1[a].hasClass('aqua')) {
       continue;
     } else if (arr1[a].hasClass('black')) {
       continue;
     } else {
+      //fill square with color and class
       playerTurn();
       if (blueBlack === true) {
         arr1[a].css('background', 'aqua');
         arr1[a].addClass('aqua');
+        //push squares id into array
         blue.push(arr1[a].attr('id'));
+        //run my winning combo/win function
         checkWinner();
         break;
       } else {
@@ -289,9 +305,6 @@ $('#btn3').on('click', fillSquare4);
 $('#btn4').on('click', fillSquare5);
 $('#btn5').on('click', fillSquare6);
 $('#btn6').on('click', fillSquare7);
-
-
-
 
 
 })
