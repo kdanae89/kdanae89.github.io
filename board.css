@@ -30,7 +30,7 @@
   border: 1px solid black;
   margin: auto;
   width: 70%;
-  height: 44em;
+  height: 49em;
   overflow: hidden;
   padding: 2em 0 0 2em;
   background: #666666;
@@ -38,13 +38,18 @@
 h3 {
   text-align: center;
   color: lavender;
-  font-size: 3em;
+  font-size: 1.5em;
   margin-bottom: 0.01em;
 }
 h1 {
   text-align: center;
   color: lavender;
   font-size: 10em;
+}
+h2 {
+  text-align: center;
+  color: aqua;
+  font-size: 3em;
 }
 button {
   margin-left: 30em;

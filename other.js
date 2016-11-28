@@ -4,6 +4,7 @@ $(function() {
 var gameBoard = $('#board');
 var buttons = $('.button');
 var squares = $('.square');
+var game = $('h2');
 var whosTurn = $('h3');
 var blue = [];
 var black = [];
@@ -11,8 +12,8 @@ var turn = 0;
 var blueBlack = true;
 
 
-// var makeButtons = function() {
-//make buttons
+var makeButtons = function() {
+// make buttons
 for(var b=0; b < 7; b++) {
   var divsB = $('<div>');
   gameBoard.append(divsB);
@@ -20,10 +21,10 @@ for(var b=0; b < 7; b++) {
   divsB.addClass('button');
   divsB.text('Go Here');
   }
-// }
-// makeButtons();
+}
+makeButtons();
 
-// var startGame = function() {
+var startGame = function() {
 //makeboard
 for (var i=0; i < 42; i++) {
   //makes 42 divs
@@ -32,10 +33,11 @@ for (var i=0; i < 42; i++) {
   //gives each div a unique id for the array
   divs.attr('id', [i]);
   divs.addClass('square');
+  game.text('CONNECT FOUR');
   whosTurn.text('Black Player');
   }
-// }
-// startGame();
+}
+startGame();
 //giant array with all of my winning CONDITIONS
 var winCombos = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4 ,5], [3, 4, 5, 6],
 [7, 8, 9, 10], [8, 9, 10, 11], [9, 10, 11, 12], [10, 11, 12, 13], [14, 15, 16, 17],
@@ -72,7 +74,23 @@ var whoWon = function(playerColor) {
 }
 
 var resetBoard = function() {
-
+  gameBoard.html('');
+  gameBoard.append(game);
+  gameBoard.append(whosTurn);
+  makeButtons();
+  startGame();
+  turn = 0;
+  blue = [];
+  black = [];
+  blueBlack = false;
+  playerTurn();
+  $('#btn0').on('click', fillSquare1);
+  $('#btn1').on('click', fillSquare2);
+  $('#btn2').on('click', fillSquare3);
+  $('#btn3').on('click', fillSquare4);
+  $('#btn4').on('click', fillSquare5);
+  $('#btn5').on('click', fillSquare6);
+  $('#btn6').on('click', fillSquare7);
 }
 
 
@@ -92,8 +110,8 @@ var checkWinner = function() {
     gameBoard.html('<h1>DRAW</h1>');
     gameBoard.append(reset);
   }
-  // var reset = $('button');
-  // reset.on('click', resetGame);
+  var reset = $('button');
+  reset.on('click', resetGame);
 }
 //I looked back over the lesson on nested loops and used Thom's from the tic-tac-toe as a reference to create my nested loop for this game, it looks really similar because it's basically the same idea as the tic-tac-toe board just much bigger with more combos.
 
