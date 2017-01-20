@@ -1,6 +1,9 @@
 # Connect Four
 
-This Connect Four game was made using JavaScript/JQuery and some CSS.
+This Connect Four game was made using the following technologies:
+*JavaScript
+*JQuery
+*CSS
 
 Starting with just some bare-bones HTML, ie the gameboard div, I added everything else dynamically using JS and JQuery.
 
