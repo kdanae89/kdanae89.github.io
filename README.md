@@ -5,12 +5,14 @@ This Connect Four game was made using the following technologies
   * JQuery
   * CSS
 
-Starting with just some bare-bones HTML, ie the gameboard div, I added everything else dynamically using JS and JQuery.
-
 ### Link to Live Site!!
 https://kdanae89.github.io
 
 There is no installation required!
+
+#### Functionality
+
+Starting with just some bare-bones HTML (div gameboard and headers to insert text into and remove from), I added everything else dynamically using JS and JQuery. So i created playable spaces by creating and appending divs via a for loop. The loop appended 42 divs for a 6 x 7 gameboard. The go here buttons were created in the same manner. I chose this style of position play so that I could loop through the columns to fill the board from bottom to the top per click, as would happen in a classic connect four game. Classes pertaining to color are assigned through click events and a toggle function for true and false (black and blue), CSS following color class display. Winning conditions take place in a massive array of arrays, which is looped through via nested for loops each time a space is played. Upon win, the board is removed and the winner is announced, where there is a reset button to whipe the board and play again!!
 
 #### Improvements I'd Like to Make
 
