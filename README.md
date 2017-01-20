@@ -7,9 +7,10 @@ This Connect Four game was made using the following technologies
 
 Starting with just some bare-bones HTML, ie the gameboard div, I added everything else dynamically using JS and JQuery.
 
-If you want to check out my live site, the link is https://kdanae89.github.io
+### Link to live site!!
+https://kdanae89.github.io
 
-There is no installation required
+There is no installation required!
 
 I was still working on my click events. If you look, each button has a separate click event... even though they all implement the same effect on their rows. I was working at getting one event listener to loop over a specific part of a loop when a specific button was click but I wasn't getting anywhere. That would make my code much more DRY.
 
