@@ -1,6 +1,6 @@
 # Connect Four
 
-This Connect Four game was made using the following technologies:
+This Connect Four game was made using the following technologies
   *JavaScript
   *JQuery
   *CSS
