@@ -1,0 +1,47 @@
+//variables
+
+$black: #000000;
+$creulean: #1D79B7;
+$grey: #597081;
+$gunmetal: #36494E;
+$cloud: #A9CEF4;
+
+body {
+  background: $gunmetal;
+}
+
+nav {
+  width: 100%;
+  box-shadow: 0px 5px 5px black;
+  opacity: 0.3;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  li {
+    list-style: none;
+    float: right;
+    padding: 1.2em;
+    &:hover {
+      background: $grey;
+      transition: 0.5s;
+      box-shadow: 5px 3px 5px black;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+  }
+}
+
+aside {
+  #image-strip {
+    width: 100%;
+    margin-top: 9em;
+  }
+  img {
+    width: 17em;
+    height: 34em;
+    display: block;
+  }
+}
