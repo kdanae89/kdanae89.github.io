@@ -34,14 +34,19 @@ nav {
   }
 }
 
-aside {
-  #image-strip {
-    width: 100%;
-    margin-top: 9em;
+main {
+  height: 20em;
+  width: 100%;
+  #left {
+    display: inline-block;
+    width: 50%;
+    margin-top: 4.5em;
   }
   img {
-    width: 17em;
-    height: 34em;
+    height: 20em;
+    width: 15em;
     display: block;
+    margin: 0.2em 0;
+    border: 1px solid $black;
   }
 }
