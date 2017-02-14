@@ -13,7 +13,7 @@ body {
 nav {
   width: 100%;
   box-shadow: 0px 5px 5px black;
-  opacity: 0.3;
+  opacity: 0.7;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -31,22 +31,41 @@ nav {
     text-decoration: none;
     color: white;
     opacity: 1;
+    font-family: 'Acme', sans-serif;
   }
 }
 
 main {
   height: 20em;
   width: 100%;
+  margin-top: 8em;
   #left {
     display: inline-block;
-    width: 50%;
-    margin-top: 4.5em;
+    width: 20%;
   }
   img {
-    height: 20em;
-    width: 15em;
+    height: 13em;
+    width: 8em;
     display: block;
     margin: 0.2em 0;
     border: 1px solid $black;
+  }
+  #right {
+    float: right;
+    margin: 6em 4em;
+  }
+  aside {
+    width: 100%;
+  }
+  #self {
+    width: 100%;
+    text-align: right;
+  }
+  h1 {
+    font-size: 3rem;
+    font-family: 'Lobster Two', cursive;
+  }
+  h3 {
+    font-family: 'Acme', sans-serif;
   }
 }
