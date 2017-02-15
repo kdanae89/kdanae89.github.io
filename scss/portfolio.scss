@@ -7,20 +7,29 @@ $gunmetal: #36494E;
 $cloud: #A9CEF4;
 
 body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: $gunmetal;
+  height: 100vh;
 }
 
 nav {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
   box-shadow: 0px 5px 5px black;
   opacity: 0.7;
-  position: fixed;
-  z-index: 2;
-  top: 0;
+  ul {
+    min-height: 2.7em;
+  }
   li {
     list-style: none;
     float: right;
     padding: 1.2em;
+    display: inline;
     &:hover {
       background: $grey;
       transition: 0.5s;
@@ -30,24 +39,25 @@ nav {
   a {
     text-decoration: none;
     color: white;
-    opacity: 1;
     font-family: 'Acme', sans-serif;
   }
 }
 
 main {
-  height: 20em;
+  height: 30em;
   width: 100%;
   margin-top: 8em;
+  z-index: 1;
+  position: fixed !important;
   #left {
     display: inline-block;
     width: 20%;
   }
   img {
-    height: 13em;
+    height: 23em;
     width: 8em;
     display: block;
-    margin: 0.2em 0;
+    margin: 0;
     border: 1px solid $black;
   }
   #right {
@@ -68,4 +78,14 @@ main {
   h3 {
     font-family: 'Acme', sans-serif;
   }
+}
+
+#skills {
+  background-color: $gunmetal;
+  width: 100%;
+  clear: both;
+  z-index: 2;
+  margin-top: 60em;
+  position: absolute;
+  height: 30em;
 }
