@@ -3,16 +3,17 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #36494E;
-  height: 100vh; }
+  min-height: 100vh; }
 
 nav {
   width: 100%;
   position: fixed;
+  background: #36494E;
   top: 0;
   left: 0;
   z-index: 3;
   box-shadow: 0px 5px 5px black;
-  opacity: 0.7; }
+  opacity: 0.8; }
   nav ul {
     min-height: 2.7em; }
   nav li {
@@ -23,7 +24,8 @@ nav {
     nav li:hover {
       background: #597081;
       transition: 0.5s;
-      box-shadow: 5px 3px 5px black; }
+      box-shadow: 5px 3px 5px black;
+      border-radius: 50%; }
   nav a {
     text-decoration: none;
     color: white;
@@ -59,12 +61,55 @@ main {
     font-family: 'Acme', sans-serif; }
 
 #skills {
-  background-color: #36494E;
+  background-color: #A9CEF4;
   width: 100%;
   clear: both;
   z-index: 2;
   margin-top: 60em;
   position: absolute;
-  height: 30em; }
+  height: 68em; }
+  #skills .listSkills {
+    margin-top: 0;
+    width: 80%;
+    height: 55em;
+    background-image: url("http://previews.123rf.com/images/katrinshine/katrinshine1402/katrinshine140200104/25711515-Burlap-with-lace-Stock-Photo-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-left: 9%;
+    box-shadow: 5px 3px 7px black;
+    text-align: center; }
+    #skills .listSkills h1 {
+      font-size: 4em;
+      font-family: 'Lobster Two', cursive; }
+    #skills .listSkills ul {
+      padding-left: 0;
+      text-align: center;
+      height: 46em; }
+      #skills .listSkills ul li {
+        list-style: none;
+        font-size: 2em;
+        font-weight: 600; }
+    #skills .listSkills #resume {
+      margin-top: 1em;
+      background-color: #1D79B7;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 0.5em;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 9px #597081; }
+      #skills .listSkills #resume:active {
+        box-shadow: 0 5px #36494E;
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        transform: translateY(4px); }
+
+#bio {
+  position: relative;
+  z-index: 2;
+  clear: both;
+  margin-top: 128em;
+  width: 100%; }
 
 
