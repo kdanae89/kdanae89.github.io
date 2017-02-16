@@ -42,7 +42,7 @@ main {
     width: 20%; }
   main img {
     height: 23em;
-    width: 8em;
+    width: 10em;
     display: block;
     margin: 0;
     border: 1px solid #000000; }
@@ -71,7 +71,7 @@ main {
   #skills .listSkills {
     margin-top: 0;
     width: 80%;
-    height: 55em;
+    height: 57em;
     background-image: url("http://previews.123rf.com/images/katrinshine/katrinshine1402/katrinshine140200104/25711515-Burlap-with-lace-Stock-Photo-background.jpg");
     background-size: cover;
     background-position: center;
@@ -84,7 +84,7 @@ main {
     #skills .listSkills ul {
       padding-left: 0;
       text-align: center;
-      height: 46em; }
+      height: 49em; }
       #skills .listSkills ul li {
         list-style: none;
         font-size: 2em;
@@ -106,10 +106,40 @@ main {
         transform: translateY(4px); }
 
 #bio {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  clear: both;
-  margin-top: 128em;
-  width: 100%; }
+  margin-top: 126.9em;
+  width: 100%;
+  background: linear-gradient(to bottom right, #597081, #1D79B7);
+  height: 30em;
+  text-align: center; }
+  #bio h1 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 3em;
+    text-align: left;
+    font-size: 2.5em; }
+  #bio p {
+    margin-top: 2em;
+    padding: 3em; }
+
+#projects {
+  margin-top: 156.9em;
+  height: 90em;
+  background: #A9CEF4;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  text-align: center; }
+  #projects h1 {
+    text-align: right;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em; }
+  #projects #connect-four {
+    display: inline-block;
+    width: 45%;
+    height: 30em; }
+    #projects #connect-four img {
+      height: 30%;
+      width: 30%; }
 
 
