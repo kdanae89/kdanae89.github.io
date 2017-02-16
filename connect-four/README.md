@@ -6,7 +6,7 @@ This Connect Four game was made using the following technologies
   * CSS
 
 ### Link to Live Site!!
-https://kdanae89.github.io
+https://kdanae89.github.io/connect-four/index.html
 
 There is no installation required!
 
