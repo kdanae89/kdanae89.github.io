@@ -1,177 +1,81 @@
 //variables
 
-$black: #000000;
-$creulean: #1D79B7;
-$grey: #597081;
-$gunmetal: #36494E;
-$cloud: #A9CEF4;
+$charcoal: #222222;
+$white: #FFFFFF;
+$blue: #2785DD;
+$aquaish: #639FAB;
+$lilac: #BBCDE5;
 
-body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: $gunmetal;
-  min-height: 100vh;
+.custom {
+  font-family: 'Fredoka One', cursive;
+  background-color: $blue;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
   width: 100%;
-  position: fixed;
-  background: $gunmetal;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  box-shadow: 0px 5px 5px black;
-  opacity: 0.8;
+  background: $charcoal;
+  margin-top: 0;
   ul {
-    min-height: 2.7em;
+    height: inherit;
+    display: flex;
+    width: inherit;
+    padding-left: 0;
+    margin-top: 0;
   }
   li {
+    display: inline-block;
     list-style: none;
-    float: right;
-    padding: 1.2em;
-    display: inline;
-    &:hover {
-      background: $grey;
-      transition: 0.5s;
-      box-shadow: 5px 3px 5px black;
-      border-radius: 50%;
-    }
+    width: 18%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1em;
   }
   a {
     text-decoration: none;
-    color: white;
-    font-family: 'Acme', sans-serif;
-  }
-}
-
-main {
-  height: 30em;
-  width: 100%;
-  margin-top: 8em;
-  z-index: 1;
-  position: fixed !important;
-  #left {
-    display: inline-block;
-    width: 20%;
-  }
-  img {
-    height: 23em;
-    width: 10em;
-    display: block;
-    margin: 0;
-    border: 1px solid $black;
-  }
-  #right {
-    float: right;
-    margin: 6em 4em;
-  }
-  aside {
-    width: 100%;
-  }
-  #self {
-    width: 100%;
-    text-align: right;
-  }
-  h1 {
-    font-size: 3rem;
-    font-family: 'Lobster Two', cursive;
-  }
-  h3 {
-    font-family: 'Acme', sans-serif;
-  }
-}
-
-#skills {
-  background-color: $cloud;
-  width: 100%;
-  clear: both;
-  z-index: 2;
-  margin-top: 60em;
-  position: absolute;
-  height: 68em;
-  .listSkills {
-    margin-top: 0;
-    width: 80%;
-    height: 57em;
-    background-image: url('http://previews.123rf.com/images/katrinshine/katrinshine1402/katrinshine140200104/25711515-Burlap-with-lace-Stock-Photo-background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-left: 9%;
-    box-shadow: 5px 3px 7px black;
-    text-align: center;
-    h1 {
-      font-size: 4em;
-      font-family: 'Lobster Two', cursive;
-    }
-    ul {
-      padding-left: 0;
-      text-align: center;
-      height: 49em;
-      li {
-        list-style: none;
-        font-size: 2em;
-        font-weight: 600;
-      }
-    }
-    #resume {
-      margin-top: 1em;
-      background-color: $creulean;
-      text-align: center;
+    color: $lilac;
+    width: 75%;
+    transition: color 0.5s ease;
+    &:hover {
       text-decoration: none;
-      font-size: 1.2em;
-      padding: 0.5em;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 9px $grey;
-      &:active {
-        box-shadow: 0 5px $gunmetal;
-        transform: translateY(4px);
-      }
+      color: $aquaish;
+    }
+  }
+  .logo {
+    a {
+    }
+    #one {
+      margin-left: 6em;
+    }
+    #two {
+      margin-right: 0;
+      margin-top: 0.4em;
     }
   }
 }
 
-#bio {
-  position: absolute;
-  z-index: 2;
-  margin-top: 126.9em;
-  width: 100%;
-  background: linear-gradient(to bottom right,$grey,$creulean);
-  height: 30em;
-  text-align: center;
-  h1 {
-    font-family: 'Lobster Two', cursive;
-    margin-top: 3em;
-    text-align: left;
-    font-size: 2.5em;
+@media (max-width: 700px) {
+  nav {
+    ul {
+    }
+    li {
+      width: 25%;
+    }
   }
-  p {
-    margin-top: 2em;
-    padding: 3em;
+  .logo {
+    display: none;
   }
 }
 
-#projects {
-  margin-top: 156.9em;
-  height: 90em;
-  background: $cloud;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  h1 {
-    text-align: right;
-    font-family: 'Lobster Two', cursive;
-    font-size: 3em;
-  }
-  #connect-four{
-    display: inline-block;
-    width: 45%;
-    height: 30em;
-  img {
-    height: 30%;
-    width: 30%;
+@media (max-width: 405px) {
+  nav {
+    ul {
+      margin: inherit 0;
+    }
+    li {
+      font-size: 1.5rem;
+      width: 33%;
     }
   }
 }
