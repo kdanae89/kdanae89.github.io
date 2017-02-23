@@ -44,10 +44,23 @@ nav {
   .logo {
     display: none; } }
 @media (max-width: 405px) {
-  nav ul {
-    margin: inherit 0; }
   nav li {
     font-size: 1.5rem;
+    padding: 0.5em;
     width: 33%; } }
+main {
+  width: 100%; }
+  main #me {
+    width: 45%;
+    display: inline-block; }
+    main #me img {
+      width: 90%;
+      margin-left: 10%;
+      margin-top: 6em; }
+  main #about {
+    width: 45%;
+    display: inline-block;
+    padding: 1em;
+    text-align: center; }
 
 

@@ -71,11 +71,30 @@ nav {
 @media (max-width: 405px) {
   nav {
     ul {
-      margin: inherit 0;
     }
     li {
       font-size: 1.5rem;
+      padding: 0.5em;
       width: 33%;
     }
+  }
+}
+
+main {
+  width: 100%;
+  #me {
+    width: 45%;
+    display: inline-block;
+    img {
+      width: 90%;
+      margin-left: 10%;
+      margin-top: 6em;
+    }
+  }
+  #about {
+    width: 45%;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
   }
 }
