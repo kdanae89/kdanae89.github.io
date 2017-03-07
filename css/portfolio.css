@@ -7,7 +7,8 @@
 nav {
   width: 100%;
   background: #222222;
-  margin-top: 0; }
+  margin-top: 0;
+  position: fixed; }
   nav ul {
     height: inherit;
     display: -webkit-flex;
@@ -68,7 +69,16 @@ main {
 
 #skills {
   width: 100%;
-  background: #222222; }
+  background: #222222;
+  color: #BBCDE5;
+  text-align: center; }
+  #skills ul {
+    width: inherit;
+    padding-left: 0; }
+    #skills ul li {
+      list-style: none; }
+  #skills h1 {
+    width: inherit; }
 
 @media (max-width: 700px) {
   nav li {
