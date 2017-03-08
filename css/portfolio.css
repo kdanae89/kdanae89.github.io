@@ -51,7 +51,8 @@ main {
       width: 90%;
       height: 90%;
       margin-left: 10%;
-      margin-top: 5em; }
+      margin-top: 5em;
+      border-radius: 50%; }
   main #about {
     font-family: 'Bad Script', cursive;
     margin-top: 2em;
@@ -76,9 +77,11 @@ main {
     width: inherit;
     padding-left: 0; }
     #skills ul li {
-      list-style: none; }
+      list-style: none;
+      font-size: 1.5em; }
   #skills h1 {
-    width: inherit; }
+    width: inherit;
+    font-size: 4em; }
 
 @media (max-width: 700px) {
   nav li {
