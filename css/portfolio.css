@@ -85,7 +85,8 @@ main {
       font-size: 1.5em; }
   #skills h1 {
     width: inherit;
-    font-size: 4em; }
+    font-size: 4em;
+    clear: both; }
   #skills button {
     padding: 10px 20px;
     font-size: 14px;
