@@ -82,6 +82,23 @@ main {
   #skills h1 {
     width: inherit;
     font-size: 4em; }
+  #skills button {
+    padding: 15px 25px;
+    font-size: 14px;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 1em;
+    box-shadow: 0 9px #999; }
+    #skills button:active {
+      box-shadow: 0 5px #666;
+      -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      transform: translateY(4px); }
+    #skills button a {
+      text-decoration: none;
+      color: #639FAB; }
 
 @media (max-width: 700px) {
   nav li {

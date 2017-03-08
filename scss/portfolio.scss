@@ -110,6 +110,24 @@ main {
     width: inherit;
     font-size: 4em;
   }
+  button {
+    padding: 15px 25px;
+    font-size: 14px;
+    outline: none;
+    background-color: $white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 1em;
+    box-shadow: 0 9px #999;
+    &:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    a {
+      text-decoration: none;
+      color: $aquaish;
+    }
+  }
 }
 
 
