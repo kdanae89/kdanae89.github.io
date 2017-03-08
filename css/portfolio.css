@@ -78,15 +78,14 @@ main {
   text-align: center;
   clear: both; }
   #skills ul {
-    width: inherit;
+    width: 100%;
     padding-left: 0; }
     #skills ul li {
       list-style: none;
       font-size: 1.5em; }
   #skills h1 {
-    width: inherit;
-    font-size: 4em;
-    clear: both; }
+    width: 100%;
+    font-size: 4em; }
   #skills button {
     padding: 10px 20px;
     font-size: 14px;

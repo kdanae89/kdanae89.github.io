@@ -103,7 +103,7 @@ main {
   text-align: center;
   clear: both;
   ul {
-    width: inherit;
+    width: 100%;
     padding-left: 0;
     li {
       list-style: none;
@@ -111,9 +111,8 @@ main {
     }
   }
   h1 {
-    width: inherit;
+    width: 100%;
     font-size: 4em;
-    clear: both;
   }
   button {
     padding: 10px 20px;
