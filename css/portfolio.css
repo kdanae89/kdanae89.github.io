@@ -75,7 +75,8 @@ main {
   width: 100%;
   background: #222222;
   color: #BBCDE5;
-  text-align: center; }
+  text-align: center;
+  clear: both; }
   #skills ul {
     width: inherit;
     padding-left: 0; }
