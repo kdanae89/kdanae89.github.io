@@ -122,9 +122,9 @@ main {
     border-radius: 8px;
     text-decoration: none;
     margin: 1em;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 5px #999;
     &:active {
-      box-shadow: 0 4px #666;
+      box-shadow: 0 3px #666;
       transform: translateY(4px);
     }
     a {
