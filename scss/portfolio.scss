@@ -135,7 +135,16 @@ main {
   }
 }
 
+#project-header {
+  margin: 4em 3em;
+}
+
+.carousel-indicators {
+  height: 2em;
+}
+
 #projects {
+  border: 2px solid $charcoal;
   height: 60em;
   width: 100%;
   z-index: 1;
@@ -143,6 +152,19 @@ main {
     width: 70%;
     height: 45em;
     margin: auto;
+    img {
+      height: 60%;
+      width: 60%;
+      margin: auto;
+      margin-top: 5em;
+    }
+    .caption {
+      height: inherit;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      margin-top: 2em;
+    }
   }
 }
 
