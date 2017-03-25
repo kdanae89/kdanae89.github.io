@@ -8,7 +8,8 @@ nav {
   width: 100%;
   background: #222222;
   margin-top: 0;
-  position: fixed; }
+  position: fixed;
+  z-index: 2; }
   nav ul {
     height: inherit;
     display: -webkit-flex;
@@ -103,6 +104,15 @@ main {
     #skills button a {
       text-decoration: none;
       color: #639FAB; }
+
+#projects {
+  height: 60em;
+  width: 100%;
+  z-index: 1; }
+  #projects .carousel-inner {
+    width: 70%;
+    height: 45em;
+    margin: auto; }
 
 @media (max-width: 700px) {
   nav li {
