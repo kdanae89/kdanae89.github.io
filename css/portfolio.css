@@ -113,24 +113,26 @@ main {
 
 #projects {
   border: 2px solid #222222;
-  height: 60em;
+  height: 80em;
   width: 100%;
   z-index: 1; }
   #projects .carousel-inner {
-    width: 70%;
-    height: 45em;
+    width: 75%;
+    height: inherit;
     margin: auto; }
-    #projects .carousel-inner img {
-      height: 60%;
-      width: 60%;
-      margin: auto;
-      margin-top: 5em; }
-    #projects .carousel-inner .caption {
-      height: inherit;
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      margin-top: 2em; }
+    #projects .carousel-inner .item {
+      height: inherit; }
+      #projects .carousel-inner .item img {
+        height: 55%;
+        width: 100%;
+        margin: auto;
+        margin-top: 5em; }
+      #projects .carousel-inner .item .caption {
+        height: inherit;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 4em; }
 
 @media (max-width: 700px) {
   nav li {
