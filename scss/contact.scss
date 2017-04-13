@@ -1,0 +1,17 @@
+$charcoal: #222222;
+$white: #FFFFFF;
+$blue: #2785DD;
+$aquaish: #639FAB;
+$lilac: #BBCDE5;
+$gamer: 'Press Start 2P', cursive;
+$readEasy: 'Comfortaa', cursive;
+$elegant: 'Bad Script', cursive;
+
+body {
+  font-family: $readEasy;
+  background-image: url('./images/smartphone.png');
+}
+
+h1 {
+  color: $blue;
+}

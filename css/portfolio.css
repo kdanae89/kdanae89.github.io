@@ -1,5 +1,5 @@
 .custom {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Comfortaa", cursive;
   background-color: #2785DD;
   margin: 0;
   padding: 0; }
@@ -57,7 +57,6 @@ main {
       margin-top: 5em;
       border-radius: 50%; }
   main #about {
-    font-family: 'Bad Script', cursive;
     width: 45%;
     height: 100%;
     display: inline-block;
@@ -66,6 +65,7 @@ main {
     margin: 7em 1em;
     padding: 2em 0; }
     main #about h1 {
+      font-family: "Press Start 2P", cursive;
       margin-top: 2em;
       font-size: 4em; }
     main #about p {
@@ -86,7 +86,8 @@ main {
       font-size: 1.5em; }
   #skills h1 {
     width: 100%;
-    font-size: 4em; }
+    font-size: 3em;
+    font-family: "Press Start 2P", cursive; }
   #skills button {
     padding: 10px 20px;
     font-size: 14px;
@@ -107,32 +108,45 @@ main {
 
 #project-header {
   margin: 4em 3em; }
+  #project-header h1 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 2em; }
 
 .carousel-indicators {
   height: 2em; }
 
 #projects {
-  border: 2px solid #222222;
-  height: 80em;
   width: 100%;
   z-index: 1; }
+  #projects .carousel-indicators {
+    opacity: 0.2;
+    margin-bottom: 0; }
   #projects .carousel-inner {
     width: 75%;
-    height: inherit;
+    height: 100%;
     margin: auto; }
     #projects .carousel-inner .item {
-      height: inherit; }
+      height: inherit;
+      margin-bottom: 6em; }
       #projects .carousel-inner .item img {
         height: 55%;
         width: 100%;
         margin: auto;
-        margin-top: 5em; }
+        margin-top: 2em; }
       #projects .carousel-inner .item .caption {
         height: inherit;
         width: 90%;
         margin: auto;
         text-align: center;
         margin-top: 4em; }
+
+footer {
+  height: 6em;
+  background-color: #222222;
+  color: #639FAB;
+  text-align: center;
+  padding: 1em;
+  font-family: "Bad Script", cursive; }
 
 @media (max-width: 700px) {
   nav li {
