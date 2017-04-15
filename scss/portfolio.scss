@@ -5,7 +5,7 @@ $white: #FFFFFF;
 $blue: #2785DD;
 $aquaish: #639FAB;
 $lilac: #BBCDE5;
-$gamer: 'Press Start 2P', cursive;
+$gamer: 'VT323', cursive;
 $readEasy: 'Comfortaa', cursive;
 $elegant: 'Bad Script', cursive;
 
@@ -92,7 +92,7 @@ main {
     h1 {
       font-family: $gamer;
       margin-top: 2em;
-      font-size: 4em;
+      font-size: 5.5em;
     }
     p {
       font-size: 1.5em;
@@ -117,7 +117,7 @@ main {
   }
   h1 {
     width: 100%;
-    font-size: 3em;
+    font-size: 4em;
     font-family: $gamer;
   }
   button {
@@ -144,7 +144,7 @@ main {
   margin: 4em 3em;
   h1 {
     font-family: $gamer;
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 

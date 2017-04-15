@@ -1,0 +1,51 @@
+body {
+  height: 100vh; }
+
+#navish {
+  width: 100%;
+  height: 4em;
+  text-align: right;
+  background: #222222;
+  color: #639FAB;
+  margin: auto;
+  padding: 1em; }
+
+main {
+  background: #2785DD; }
+  main .in {
+    margin: 0;
+    font-family: "VT323", cursive; }
+  main div {
+    display: inline-block;
+    margin: 1em;
+    border-radius: 30%;
+    padding: 1em; }
+
+.one {
+  width: 25%;
+  background: #639FAB;
+  color: #222222;
+  padding: 2em;
+  display: inline-block; }
+  .one h2 {
+    width: 50%; }
+
+.two {
+  width: 25%;
+  background: #639FAB;
+  color: #222222;
+  padding: 2em;
+  display: inline-block; }
+  .two h2 {
+    width: 50%; }
+
+.three {
+  width: 25%;
+  background: #639FAB;
+  color: #222222;
+  padding: 2em;
+  display: inline-block; }
+  .three h2 {
+    width: 50%; }
+
+

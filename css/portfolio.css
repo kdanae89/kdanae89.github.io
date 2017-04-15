@@ -65,9 +65,9 @@ main {
     margin: 7em 1em;
     padding: 2em 0; }
     main #about h1 {
-      font-family: "Press Start 2P", cursive;
+      font-family: "VT323", cursive;
       margin-top: 2em;
-      font-size: 4em; }
+      font-size: 5.5em; }
     main #about p {
       font-size: 1.5em;
       padding: 1em 3em; }
@@ -86,8 +86,8 @@ main {
       font-size: 1.5em; }
   #skills h1 {
     width: 100%;
-    font-size: 3em;
-    font-family: "Press Start 2P", cursive; }
+    font-size: 4em;
+    font-family: "VT323", cursive; }
   #skills button {
     padding: 10px 20px;
     font-size: 14px;
@@ -109,8 +109,8 @@ main {
 #project-header {
   margin: 4em 3em; }
   #project-header h1 {
-    font-family: "Press Start 2P", cursive;
-    font-size: 2em; }
+    font-family: "VT323", cursive;
+    font-size: 3em; }
 
 .carousel-indicators {
   height: 2em; }
@@ -189,3 +189,5 @@ footer {
     margin-top: 2em; }
   main #about h1 {
     margin-top: 1.5em; } }
+
+

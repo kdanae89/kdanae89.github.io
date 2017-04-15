@@ -1,0 +1,69 @@
+$charcoal: #222222;
+$white: #FFFFFF;
+$blue: #2785DD;
+$aquaish: #639FAB;
+$lilac: #BBCDE5;
+$gamer: 'VT323', cursive;
+$readEasy: 'Comfortaa', cursive;
+$elegant: 'Bad Script', cursive;
+
+body {
+  height: 100vh;
+}
+
+#navish {
+  width: 100%;
+  height: 4em;
+  text-align: right;
+  background: $charcoal;
+  color: $aquaish;
+  margin: auto;
+  padding: 1em;
+}
+
+main {
+  background: $blue;
+  .in {
+    margin: 0;
+    font-family: $gamer;
+  }
+  div {
+    display: inline-block;
+    margin: 1em;
+    border-radius: 30%;
+    padding: 1em;
+  }
+}
+
+.one {
+  width: 25%;
+  background: $aquaish;
+  color: $charcoal;
+  padding: 2em;
+  display: inline-block;
+  h2 {
+    width: 50%;
+  }
+}
+
+.two {
+  width: 25%;
+  background: $aquaish;
+  color: $charcoal;
+  padding: 2em;
+  display: inline-block;
+  h2 {
+    width: 50%;
+  }
+}
+
+.three {
+  width: 25%;
+  background: $aquaish;
+  color: $charcoal;
+  padding: 2em;
+  display: inline-block;
+  h2 {
+    width: 50%;
+  }
+}
