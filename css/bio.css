@@ -52,11 +52,10 @@ main {
   main div {
     display: inline-block;
     margin: 1em;
-    border-radius: 20%;
     padding: 1em; }
 
 main {
-  min-height: 30em;
+  min-height: 25em;
   max-height: 80em; }
   main .in {
     font-size: 3em;

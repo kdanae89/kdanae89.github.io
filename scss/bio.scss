@@ -73,13 +73,12 @@ main {
   div {
     display: inline-block;
     margin: 1em;
-    border-radius: 20%;
     padding: 1em;
   }
 }
 
 main {
-  min-height: 30em;
+  min-height: 25em;
   max-height: 80em;
   .in {
     font-size: 3em;
@@ -103,6 +102,7 @@ main {
 
   .two {
     margin-left: 15%;
+
     width: 65%;
     height: 65%;
     background: $aquaish;
