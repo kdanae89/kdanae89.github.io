@@ -104,7 +104,9 @@ main {
 #fun {
   min-height: 12em;
   max-height: 18em;
-  padding: 0.5em; }
+  padding: 0.5em;
+  background: #222222;
+  color: #BBCDE5; }
   #fun h1 {
     font-family: "VT323", cursive;
     font-size: 3em; }
