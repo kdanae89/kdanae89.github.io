@@ -16,7 +16,7 @@ Starting with just some bare-bones HTML (div gameboard and headers to insert tex
 
 #### Improvements I'd Like to Make
 
-I was still working on my click events. You will notice each button has a separate click event... even though they all implement the same effect on their rows. I was working on getting one event listener to loop over a specific part of a loop when a specific button was click but I wasn't getting anywhere. That would make my code much more DRY. Also I would like to implement an AI so a single player could enjoy this game!
+I was still working on my click events. You will notice each button has a separate click event... even though they all implement the same function on their rows. I was working on getting one event listener to loop over a specific part of a loop when a specific button was click but I wasn't getting anywhere. That would make my code much more DRY. Also I would like to implement an AI so a single player could enjoy this game!
 
 #### Gameplay
 
