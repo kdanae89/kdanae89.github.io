@@ -120,7 +120,7 @@ main {
 #projects {
   width: 100%;
   z-index: 1;
-  height: 55em; }
+  height: 47em; }
   #projects .carousel-indicators {
     opacity: 0.2;
     margin-bottom: 0; }
@@ -160,6 +160,12 @@ footer {
 
   #me img {
     margin-bottom: 10em; } }
+@media (max-width: 600px) {
+  #projects .carousel-inner .item img {
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    margin-top: 2em; } }
 @media (max-width: 575px) {
   main {
     min-height: 80em;
@@ -186,7 +192,7 @@ footer {
   #projects {
     width: 100%;
     z-index: 1;
-    height: 64em; }
+    height: 40em; }
     #projects .carousel-indicators {
       opacity: 0.2;
       margin-bottom: 0; } }
@@ -204,7 +210,7 @@ footer {
   #projects {
     width: 100%;
     z-index: 1;
-    height: 70em; }
+    height: 49em; }
     #projects .carousel-indicators {
       opacity: 0.2;
       margin-bottom: 0; } }
